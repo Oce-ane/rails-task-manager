@@ -1,0 +1,12 @@
+<div class="container">
+<div class="card">
+<h2 class="h2">Edit <%= @task.title %></h2>
+</div>
+<div class="card">
+  <%= form_with model: @task do |f| %>
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+    <%= render "form", task: @task%>
+  <% end %>
+</div>
+</div>

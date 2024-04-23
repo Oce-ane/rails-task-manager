@@ -1,0 +1,15 @@
+<div class="d-flex flex-column">
+<%= form_with model: @task do |f| %>
+<div class="p-2">
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</div>
+<div class="p-2">
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+</div>
+<div class="p-2">
+  <%= f.submit %>
+</div>
+<% end %>
+</div>
